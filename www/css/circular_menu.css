@@ -1,0 +1,63 @@
+.circular-menu {
+	position: fixed;
+	background: transparent;
+	background-color: transparent;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	visibility: hidden;
+}
+
+.openontop{
+    visibility: visible;
+}
+
+.menu-button {
+    position: fixed;
+    height: 1.2cm;
+    /*width: 1.9cm;*/
+	width: 20%;
+	left: 40%;
+    bottom: 0;
+	/*right: 50%;
+	margin-right: -4%;*/
+    text-align: center;
+    visibility: visible;
+	z-index: 180;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  visibility: hidden;
+  transition: all 0.4s ease-out;
+
+}
+
+.open.circle {
+  visibility: visible;
+
+}
+
+.circle a{
+  color: white;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  position: absolute;
+  text-align: center;
+  -webkit-border-radius:100%;
+  border-radius: 100%
+
+}
+
+.circle a.menu-item{
+	background: orange;
+}
+
+.circle a.menu-functionality{
+	background: grey;
+}

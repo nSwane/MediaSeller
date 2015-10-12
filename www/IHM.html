@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!--
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+		<link rel="stylesheet" href="css/circular_menu.css" />
+		
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/lib/fuse.min.js"></script>
+
+        <script type="text/javascript" src="js/database/accessData.js"></script>
+        <script type="text/javascript" src="js/fusion/fusion.js"></script>
+        <script type="text/javascript" src="js/app/display.js"></script>
+        <script type="text/javascript" src="js/app/cartAccess.js"></script>
+        <script type="text/javascript" src="js/app/events.js"></script>
+        <script type="text/javascript" src="js/barcode/barecodeApp.js"></script>
+        <script type="text/javascript" src="js/voice/voicestuff.js"></script>
+        <script type="text/javascript" src="js/voice/speech.js"></script>
+        <script type="text/javascript" src="js/touch/myTouchFunctionality.js"></script>
+		<script type="text/javascript" src="js/menu/circular-menu.js"></script>
+		
+        <title>MediaSeller</title>
+
+    </head>
+	
+	<body onload="displayInit()">
+	
+	<div id="sliderCart" class="slideout-menu makeMeDroppable">
+		<h3>ShoppingCart
+			<a href="#" class="slideout-menu-toggle">x</a>
+		</h3>
+        <p class="pitem ptitle">Item </p>
+        <p class="pitem pqty">QTY </p>
+        <p class="premove pitem">Remove  </p>
+		<ul id='shoppingCartContent' class="shoppingCartContent">
+			<!-- filled by js -->
+		</ul>
+        <button class="checkoutbutton">Checkout</button>
+
+	</div><!--slider-->
+	
+    <div id="MainWelcomePage">
+
+		<header>
+			<a href='IHM.html'>
+				<img id="logo" alt="Media Seller" src="images/logo.png" />
+			</a>
+			
+			<div id="toolbar">
+				<form id="searchBar" onsubmit="return false;">
+					<input id="results" type="text" name="product"/>
+					<input type="submit" value="Search"/>
+				</form>
+				
+				<button id="buttonCart" class="makeMeDroppable slideout-menu-toggle">Cart</button> 
+
+			</div>
+		</header>
+		<div id="content">
+			<ul id="contentBody">
+				<!-- Filled by JS -->
+			</ul>
+		</div>
+
+		<nav class="circular-menu">
+			<div class="circle">
+				<a id="startScan" class="menu-functionality">SCAN</a>
+				<a id="movies" class="menu-item">MOVIES</a>
+				<a id="movies" class="menu-item">GAMES</a>
+				<a id="movies" class="menu-item">SERIES</a>
+				<a id="musics" class="menu-item">MUSICS</a>
+				<a id="speech" class="menu-functionality">FIND</a>
+			</div>
+		</nav>
+		<img class="menu-button" alt="Menu" src="images/bouton_menu.png">
+    
+	</div>
+
+
+	<script type="text/javascript">
+	document.addEventListener("backbutton", function(){
+		console.log('Exit');
+		window.close();
+	}, false);
+	</body>
+	
+</html>

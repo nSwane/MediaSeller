@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/lib/fuse.min.js"></script>
+
+    <script type="text/javascript" src="js/database/accessData.js"></script>
+	<script type="text/javascript" src="js/fusion/fusion.js"></script>
+    <script type="text/javascript" src="js/app/display.js"></script>
+    <script type="text/javascript" src="js/app/cartAccess.js"></script>
+    <script type="text/javascript" src="js/app/events.js"></script>
+    <script type="text/javascript" src="js/barcode/barecodeApp.js"></script>
+    <script type="text/javascript" src="js/voice/voicestuff.js"></script>
+    <script type="text/javascript" src="js/voice/speech.js"></script>
+    <script type="text/javascript" src="js/touch/myTouchFunctionality.js"></script>
+	<script type="text/javascript" src="js/menu/circular-menu.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/cart.css" />
+	<link rel="stylesheet" href="css/circular_menu.css" />
+    <title>MediaSeller</title>
+
+</head>
+
+<body onload="checkoutPageInit()">
+
+<div class="slideout-menu makeMeDroppable">
+    <h3>ShoppingCart
+        <a href="#" class="slideout-menu-toggle">x</a>
+    </h3>
+    <p class="pitem ptitle">Item </p>
+    <p class="pitem pqty">QTY </p>
+    <p class="premove pitem">Remove  </p>
+    <ul class="shoppingCartContent" >
+        <li><a>Label1</a></li>
+        <li><a>Label2</a></li>
+    </ul>
+    <button class="checkoutbutton">Checkout</button>
+</div><!--slider-->
+
+<div id="MainWelcomePage">
+
+    <header>
+        <div id="dropme">
+            <img id="logo" alt="Media Seller" src="images/logo.png" />
+
+            <div id="toolbar">
+                <button type="button"  class="enablevoice ">voice</button>
+                <button type="button"  class="disablevoice ">voice</button>
+
+               <button id="buttonCart" class="makeMeDroppable slideout-menu-toggle">Cart</button>
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <div id="checkoutcontent" style="padding-bottom: 85px">
+
+        Welcome to the checkout page lets buy stuff!
+       <div class="shoppingcart">
+           <div class="itemtitle">
+               <h3 >Item</h3>
+           <div class="myitem">
+               <p>bob</p>
+           </div>
+           </div>
+           <div class="itemqty">
+               <h3 >Qty</h3>
+           <div class="myitemqty">
+               <input type="text" class="toto" value="1"/>
+           </div>
+           </div>
+           <div class="itemPrice">
+           <h3 >Price</h3>
+           <div class="myitemprice">
+               <p>10.00$</p>
+           </div>
+           </div>
+           <div class="itemqtyPrice">
+           <h3 >totals</h3>
+           <div class="myitemqtyprice">
+               <p>10.00$</p>
+           </div>
+           </div>
+       </div>
+        <div class="totalitemPrice">
+            <h3 >Shopping cart Total</h3>
+            <p class="mytotal">10.00$</p>
+            <button id="achat" class="buybutton">buy now</button>
+            <p id="achatmsg"></p>
+        </div>
+
+    </div>
+
+
+
+		<nav class="circular-menu">
+			<div class="circle">
+				<a id="startScan" class="menu-functionality">SCAN</a>
+				<a id="home" class="menu-functionality">HOME</a>
+			</div>
+
+			<img class="menu-button" alt="Menu" src="images/bouton_menu.png">
+		</nav>
+
+
+
+</div>
+
+
+</body>
+
+</html>

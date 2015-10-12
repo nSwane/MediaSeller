@@ -1,0 +1,147 @@
+body {
+    background-color: #292f3c;
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.2cm;
+    background-image: -moz-linear-gradient(top, #959690 0%, #bcbcba 100%);
+    background-image: -webkit-linear-gradient(top, #959690 0%, #bcbcba 100%);
+    /*border-bottom: solid 2px;*/
+}
+
+.doigt {
+	position : absolute;
+	width	 : 40px;
+	height	 : 40px;
+	border-radius : 16px;
+	border : solid green 10px;
+	z-index: 100;
+}
+
+.ui-draggable-dragging {
+    width: 60px;
+    height: 60px;
+    z-index: 101;
+}
+
+.slider {
+    background: blue;
+    width: 180px;
+    height: 200px;
+    display: none;
+    padding: 5px;
+}
+
+.myimg {
+    width: 100%;
+    height: auto;
+}
+
+.buttonsd {
+    background-image: url(/images/bouton_qrcode.png); /* 16px x 16px */
+    background-color: red; /* make the button transparent */
+    background-repeat: no-repeat; /* make the background image appear only once */
+    background-position: 0px 0px; /* equivalent to 'top left' */
+    border: 0; /* assuming we don't want any borders */
+    cursor: pointer; /* make the cursor like hovering over an <a> element */
+    height: 40px; /* make this the size of your image */
+    padding-left: 40px; /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+#logo {
+    float: left;
+    height: 1.2cm;
+    margin-top: 0.12cm;
+}
+
+#toolbar {
+    float: right;
+    text-align: right;
+}
+
+#searchBar {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#results {
+	width: 4cm;
+}
+
+label {
+    display: block;
+}
+
+.buttons {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.2cm;
+}
+
+/***** CONTENT *****/
+#content {
+    margin-top: 1.4cm;
+}
+
+#content ul {
+    margin: 0;
+    padding: 0;
+}
+
+#content li {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background-color: whitesmoke;
+}
+
+#content li h1 {
+    font-size: 1em;
+}
+
+#content li p {
+    font-size: 0.7em;
+}
+
+#content .product_image {
+    width: 100%;
+}
+
+/***** RESPONSIVE DESIGN *****/
+
+@media (max-width: 350px) {
+    input {
+        width: 2.3cm!important;
+    }
+}
+
+@media (max-width: 270px) {
+    #search_bar {
+        display: none!important;
+    }
+
+    #content li {
+        width: 100%!important;
+    }
+}
+
+@media (min-width: 500px) {
+	#results  {
+		width: 8cm;
+    }
+
+    #content li {
+        width: 29%!important;
+    }
+}

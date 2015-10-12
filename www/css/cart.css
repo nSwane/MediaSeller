@@ -1,0 +1,154 @@
+/*doesnt change*/
+.pitem {
+    padding-top: 1px;
+    margin-top: 1px;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+
+.slideout-menu {
+	position: fixed;
+	top: 1.2cm;
+	right: -50%;
+	width: 50%;
+	height: 100%;
+	background: #333;
+	z-index: 50;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.slideout-menu h3 {
+	position: relative;
+	padding: 12px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 400;
+	border-bottom: 4px solid #222;
+}
+.slideout-menu .slideout-menu-toggle {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	display: inline-block;
+	padding: 6px 9px 5px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	background: #222;
+	color: #999;
+	text-decoration: none;
+	vertical-align: top;
+}
+.slideout-menu .slideout-menu-toggle:hover {
+	color: #fff;
+}
+.slideout-menu ul {
+	list-style: none;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+.slideout-menu ul li {
+	display: block!important;
+	width: 100%;
+	border-top: 1px solid #454545;
+	border-bottom: 1px solid #454545;
+	background: none;
+}
+.slideout-menu ul li a {
+
+	/*width: 100%!important;  */
+	padding: 10px;
+	color: #999;
+	text-decoration: none;
+}
+.slideout-menu ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+
+/*slider menu stuff */
+.cartitem, .delitem,.itemcount, .slideout-menu li a {
+    display: inline-block;
+    color: #999;
+}
+.itemcount {
+    margin-left: 5%;
+}
+.ptitle{
+    padding-left: 5%;
+}
+.pqty{
+
+    margin-left: 5%;
+}
+.delitem{
+    padding-left: 5%;
+    margin-left: 5%;
+}
+.premove{
+    margin-left: 2%;
+}
+
+
+/*checkoutpage css */
+#checkoutcontent{
+    color: #FFFFFF;
+    padding: 5%;
+    padding-top: 15%;
+}
+input.toto {
+    width: 25px;
+}
+.itemtitle, .itemqty, .itemPrice, .itemqtyPrice{
+    display: inline-block;
+    margin: 5%;
+    color: #FFFFFF;
+}
+div.totalitemPrice, .totalitemPrice h3, .totalitemPrice p {
+    display: inline-block;
+    color: #FFFFFF;
+    padding-top:0px;
+    padding-right: 5%;
+}
+
+
+
+@media  (min-width: 359px){
+    #checkoutcontent{
+        padding: 5%;
+        padding-top: 15%;
+    }
+}
+@media (min-width: 500px) {
+    #checkoutcontent{
+        padding: 5%;
+        padding-top: 10%;
+    }
+    .itemcount {
+        margin-left: 15%;
+    }
+    .ptitle{
+        padding-left: 5%;
+    }
+    .pqty{
+
+        margin-left: 15%;
+    }
+    .delitem{
+        padding-left: 10%;
+        margin-left: 25%;
+    }
+    .premove{
+        margin-left: 20%;
+    }
+}
+@media only screen and (min-width: 760px){
+    #checkoutcontent{
+
+        padding-top: 5%;
+    }
+}
